@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>你的SBTI结果</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:system-ui,-apple-system,Segoe UI,Roboto}
+body{background:#e6f2ff;min-height:100vh;display:grid;place-items:center;padding:20px}
+.card{background:white;border-radius:20px;box-shadow:0 8px 24px rgba(0,102,204,0.15);max-width:460px;width:100%;padding:40px;text-align:center}
+h2{color:#0066cc;margin-bottom:20px}
+.code{font-size:42px;font-weight:bold;color:#0052a3;margin:16px 0}
+.name{font-size:20px;color:#222;margin-bottom:12px}
+.desc{color:#555;line-height:1.6;margin-bottom:30px}
+.btn{background:#0066cc;color:white;border:none;border-radius:50px;padding:12px 32px;font-size:16px;cursor:pointer}
+.btn:hover{background:#0052a3}
+</style>
+</head>
+<body>
+<div class="card">
+  <h2>你的 SBTI 人格</h2>
+  <div id="code" class="code">-</div>
+  <div id="name" class="name">-</div>
+  <p id="desc" class="desc">加载中...</p>
+  <button class="btn" onclick="location.href='index.html'">返回主页</button>
+</div>
+
+<script>
+const resultDB = {
+DEAD:{name:"死者",desc:"对一切失去兴趣，只想躺平，彻底佛系"},
+JOKR:{name:"小丑",desc:"用幽默掩饰悲伤，笑着笑着就沉默了"},
+IMSB:{name:"自我攻击者",desc:"内心戏爆棚，遇事先自我否定"},
+MALO:{name:"吗喽",desc:"命苦但命硬，在生活丛林灵活闪避"},
+CTRL:{name:"拿捏者",desc:"掌控欲强，事事要说了算"},
+ATM:{name:"送钱者",desc:"习惯性付出，时间精力情绪全被榨干"},
+FUCK:{name:"草人",desc:"外焦里嫩，表面暴躁内心清醒"},
+DRUNK:{name:"酒鬼",desc:"隐藏人格，情绪到位就失控"},
+HHHH:{name:"混沌体",desc:"无法归类，精神状态极其不稳定"},
+FAKE:{name:"伪装者",desc:"戴着面具生活，从不展露真实自己"},
+SHIT:{name:"愤世者",desc:"看啥都不顺眼，平等讨厌所有人"},
+SAD:{name:"emo人",desc:"长期低落，敏感爱哭，容易破防"},
+LAZY:{name:"摆烂王",desc:"能躺着绝不坐着，极度拖延"},
+WEAK:{name:"软柿子",desc:"好欺负，没脾气，总被拿捏"},
+FOOL:{name:"大冤种",desc:"善良无脑，总被人当枪使"},
+ANX:{name:"焦虑怪",desc:"天天胡思乱想，没事也找事焦虑"},
+LONELY:{name:"孤独鬼",desc:"身边人多，内心极度孤独"},
+SENS:{name:"玻璃心",desc:"敏感多疑，一句话就能崩溃"},
+NICE:{name:"老好人",desc:"不懂拒绝，委屈自己成全别人"},
+LOSE:{name:"失败者",desc:"干啥啥不行，躺平第一名"},
+HIDE:{name:"逃避者",desc:"遇到问题第一反应是躲"},
+CRY:{name:"爱哭鬼",desc:"情绪脆弱，一点小事就哭"},
+DOUBLE:{name:"双面人",desc:"人前一套人后一套，口是心非"},
+TIRED:{name:"疲惫者",desc:"身心俱疲，活着就是累"},
+SELF:{name:"自我内耗者",desc:"天天和自己打架，精神内耗严重"},
+GIVE:{name:"付出型",desc:"无条件付出，从不求回报"},
+CHAOS:{name:"混乱体",desc:"情绪思维全混乱，毫无逻辑"}
+};
+
+const key = localStorage.getItem('sbtiResult') || "DEAD";
+const res = resultDB[key];
+document.getElementById('code').innerText = key;
+document.getElementById('name').innerText = res.name;
+document.getElementById('desc').innerText = res.desc;
+</script>
+</body>
+</html>
