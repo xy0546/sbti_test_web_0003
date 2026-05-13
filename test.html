@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>测试开始</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:system-ui,-apple-system,Segoe UI,Roboto}
+body{background:#e6f2ff;padding:20px}
+.box{max-width:700px;margin:0 auto;background:white;border-radius:16px;box-shadow:0 6px 18px rgba(0,102,204,0.1);padding:24px}
+h2{color:#0066cc;text-align:center;margin-bottom:20px}
+.question{background:#f0f7ff;border-radius:12px;padding:18px;margin:16px 0}
+.question p{margin-bottom:12px;font-size:15px}
+.options{display:flex;gap:12px;justify-content:center}
+.options label{padding:6px 14px;border:1px solid #cce5ff;border-radius:8px;cursor:pointer}
+.options input{margin-right:6px}
+.submit{background:#0066cc;color:white;width:100%;padding:14px;border:none;border-radius:12px;font-size:16px;margin-top:20px;cursor:pointer}
+</style>
+</head>
+<body>
+<div class="box">
+<h2>SBTI 测试（31题）</h2>
+<form id="testForm">
+  <div class="question"><p>1. 你是否经常觉得自己一无是处？</p><div class="options"><label><input type="radio" name="q1" value="1" required>是</label><label><input type="radio" name="q1" value="2">一般</label><label><input type="radio" name="q1" value="3">否</label></div></div>
+  <div class="question"><p>2. 遇到困难你第一反应是逃避吗？</p><div class="options"><label><input type="radio" name="q2" value="1">是</label><label><input type="radio" name="q2" value="2">一般</label><label><input type="radio" name="q2" value="3">否</label></div></div>
+  <div class="question"><p>3. 你是否总在讨好别人委屈自己？</p><div class="options"><label><input type="radio" name="q3" value="1">是</label><label><input type="radio" name="q3" value="2">一般</label><label><input type="radio" name="q3" value="3">否</label></div></div>
+  <div class="question"><p>4. 你是否经常精神内耗睡不着？</p><div class="options"><label><input type="radio" name="q4" value="1">是</label><label><input type="radio" name="q4" value="2">一般</label><label><input type="radio" name="q4" value="3">否</label></div></div>
+  <div class="question"><p>5. 你是否觉得人生毫无意义只想躺平？</p><div class="options"><label><input type="radio" name="q5" value="1">是</label><label><input type="radio" name="q5" value="2">一般</label><label><input type="radio" name="q5" value="3">否</label></div></div>
+  <div class="question"><p>6. 你是否习惯性自我否定？</p><div class="options"><label><input type="radio" name="q6" value="1">是</label><label><input type="radio" name="q6" value="2">一般</label><label><input type="radio" name="q6" value="3">否</label></div></div>
+  <div class="question"><p>7. 你是否总被人当冤大头？</p><div class="options"><label><input type="radio" name="q7" value="1">是</label><label><input type="radio" name="q7" value="2">一般</label><label><input type="radio" name="q7" value="3">否</label></div></div>
+  <div class="question"><p>8. 你是否情绪不稳定容易破防？</p><div class="options"><label><input type="radio" name="q8" value="1">是</label><label><input type="radio" name="q8" value="2">一般</label><label><input type="radio" name="q8" value="3">否</label></div></div>
+  <div class="question"><p>9. 你是否经常假装快乐？</p><div class="options"><label><input type="radio" name="q9" value="1">是</label><label><input type="radio" name="q9" value="2">一般</label><label><input type="radio" name="q9" value="3">否</label></div></div>
+  <div class="question"><p>10. 你是否控制不住想太多？</p><div class="options"><label><input type="radio" name="q10" value="1">是</label><label><input type="radio" name="q10" value="2">一般</label><label><input type="radio" name="q10" value="3">否</label></div></div>
+  <div class="question"><p>11. 你是否命苦但又很能扛？</p><div class="options"><label><input type="radio" name="q11" value="1">是</label><label><input type="radio" name="q11" value="2">一般</label><label><input type="radio" name="q11" value="3">否</label></div></div>
+  <div class="question"><p>12. 你是否很会伪装自己？</p><div class="options"><label><input type="radio" name="q12" value="1">是</label><label><input type="radio" name="q12" value="2">一般</label><label><input type="radio" name="q12" value="3">否</label></div></div>
+  <div class="question"><p>13. 你是否容易被pua？</p><div class="options"><label><input type="radio" name="q13" value="1">是</label><label><input type="radio" name="q13" value="2">一般</label><label><input type="radio" name="q13" value="3">否</label></div></div>
+  <div class="question"><p>14. 你是否付出总得不到回报？</p><div class="options"><label><input type="radio" name="q14" value="1">是</label><label><input type="radio" name="q14" value="2">一般</label><label><input type="radio" name="q14" value="3">否</label></div></div>
+  <div class="question"><p>15. 你是否表面坚强内心脆弱？</p><div class="options"><label><input type="radio" name="q15" value="1">是</label><label><input type="radio" name="q15" value="2">一般</label><label><input type="radio" name="q15" value="3">否</label></div></div>
+  <div class="question"><p>16. 你是否经常觉得自己很蠢？</p><div class="options"><label><input type="radio" name="q16" value="1">是</label><label><input type="radio" name="q16" value="2">一般</label><label><input type="radio" name="q16" value="3">否</label></div></div>
+  <div class="question"><p>17. 你是否对人热情但又怕被伤害？</p><div class="options"><label><input type="radio" name="q17" value="1">是</label><label><input type="radio" name="q17" value="2">一般</label><label><input type="radio" name="q17" value="3">否</label></div></div>
+  <div class="question"><p>18. 你是否遇事总往坏处想？</p><div class="options"><label><input type="radio" name="q18" value="1">是</label><label><input type="radio" name="q18" value="2">一般</label><label><input type="radio" name="q18" value="3">否</label></div></div>
+  <div class="question"><p>19. 你是否很会忍？</p><div class="options"><label><input type="radio" name="q19" value="1">是</label><label><input type="radio" name="q19" value="2">一般</label><label><input type="radio" name="q19" value="3">否</label></div></div>
+  <div class="question"><p>20. 你是否经常自我感动？</p><div class="options"><label><input type="radio" name="q20" value="1">是</label><label><input type="radio" name="q20" value="2">一般</label><label><input type="radio" name="q20" value="3">否</label></div></div>
+  <div class="question"><p>21. 你是否容易相信别人？</p><div class="options"><label><input type="radio" name="q21" value="1">是</label><label><input type="radio" name="q21" value="2">一般</label><label><input type="radio" name="q21" value="3">否</label></div></div>
+  <div class="question"><p>22. 你是否总在迁就别人？</p><div class="options"><label><input type="radio" name="q22" value="1">是</label><label><input type="radio" name="q22" value="2">一般</label><label><input type="radio" name="q22" value="3">否</label></div></div>
+  <div class="question"><p>23. 你是否觉得自己很孤独？</p><div class="options"><label><input type="radio" name="q23" value="1">是</label><label><input type="radio" name="q23" value="2">一般</label><label><input type="radio" name="q23" value="3">否</label></div></div>
+  <div class="question"><p>24. 你是否经常摆烂？</p><div class="options"><label><input type="radio" name="q24" value="1">是</label><label><input type="radio" name="q24" value="2">一般</label><label><input type="radio" name="q24" value="3">否</label></div></div>
+  <div class="question"><p>25. 你是否很敏感多疑？</p><div class="options"><label><input type="radio" name="q25" value="1">是</label><label><input type="radio" name="q25" value="2">一般</label><label><input type="radio" name="q25" value="3">否</label></div></div>
+  <div class="question"><p>26. 你是否总在为别人着想？</p><div class="options"><label><input type="radio" name="q26" value="1">是</label><label><input type="radio" name="q26" value="2">一般</label><label><input type="radio" name="q26" value="3">否</label></div></div>
+  <div class="question"><p>27. 你是否容易焦虑？</p><div class="options"><label><input type="radio" name="q27" value="1">是</label><label><input type="radio" name="q27" value="2">一般</label><label><input type="radio" name="q27" value="3">否</label></div></div>
+  <div class="question"><p>28. 你是否经常口是心非？</p><div class="options"><label><input type="radio" name="q28" value="1">是</label><label><input type="radio" name="q28" value="2">一般</label><label><input type="radio" name="q28" value="3">否</label></div></div>
+  <div class="question"><p>29. 你是否觉得自己很失败？</p><div class="options"><label><input type="radio" name="q29" value="1">是</label><label><input type="radio" name="q29" value="2">一般</label><label><input type="radio" name="q29" value="3">否</label></div></div>
+  <div class="question"><p>30. 你是否渴望被理解但又怕被看穿？</p><div class="options"><label><input type="radio" name="q30" value="1">是</label><label><input type="radio" name="q30" value="2">一般</label><label><input type="radio" name="q30" value="3">否</label></div></div>
+  <div class="question"><p>31. 你是否经常觉得活着好累？</p><div class="options"><label><input type="radio" name="q31" value="1">是</label><label><input type="radio" name="q31" value="2">一般</label><label><input type="radio" name="q31" value="3">否</label></div></div>
+  <button class="submit" type="submit">生成结果</button>
+</form>
+</div>
+
+<script>
+const form = document.getElementById('testForm');
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  let score = 0;
+  for(let i=1;i<=31;i++) score += parseInt(form['q'+i].value);
+
+  const types = ["DEAD","JOKR","IMSB","MALO","CTRL","ATM","FUCK","DRUNK","HHHH","FAKE","SHIT","SAD","LAZY","WEAK","FOOL","ANX","LONELY","SENS","NICE","LOSE","HIDE","CRY","DOUBLE","TIRED","SELF","GIVE","CHAOS"];
+  const type = types[score % types.length];
+  localStorage.setItem('sbtiResult', type);
+  location.href='result.html';
+});
+</script>
+</body>
+</html>
